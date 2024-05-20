@@ -22,11 +22,11 @@ router.onError((err, c) => {
 });
 
 // Hello World
-router.get("/", (c) => c.text("fuck you"));
+router.get("/", (c) => c.text("Hello world"));
 
 // Serve JSON
-router.get("/fuck", (c) => {
-  return c.json({ message: "Fuck!!!" });
+router.get("/test", (c) => {
+  return c.json({ message: "test" });
 });
 
 export { router };
